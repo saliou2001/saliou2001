@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380">
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#121a30"/></linearGradient>
+    <linearGradient id="bord" x1="0" x2="1"><stop offset="0" stop-color="#d97706"/><stop offset="0.5" stop-color="#fcd34d"/><stop offset="1" stop-color="#d97706"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0" dur="6s" repeatCount="indefinite"/></linearGradient>
+    <filter id="lueur"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grille" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#ffffff" fill-opacity="0.08"/></pattern>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif; }
+    .eyebrow { font-size: 14px; font-weight: 600; letter-spacing: 3px; fill: #fcd34d; }
+    .titre { font-size: 40px; font-weight: 700; fill: #ffffff; }
+    .sous { font-size: 17px; fill: #94a3b8; }
+    .point { font-size: 19px; fill: #e2e8f0; opacity: 0; animation: entre .8s ease-out forwards; }
+    .puce { fill: #fcd34d; }
+    @keyframes entre { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: none; } }
+  </style>
+  <rect x="1" y="1" width="1198" height="378" rx="24" fill="url(#fond)" stroke="url(#bord)" stroke-width="2"/>
+  <rect x="640" y="24" width="536" height="332" rx="16" fill="url(#grille)"/>
+  <text class="eyebrow" x="56" y="70">EN PARTENARIAT AVEC VIVERIS · TOULOUSE</text>
+  <text class="titre" x="56" y="122">Squizi</text>
+  <rect x="196" y="92" width="150" height="34" rx="17" fill="#fcd34d" fill-opacity="0.12" stroke="#fcd34d" stroke-opacity="0.6"/>
+  <text x="271" y="115" text-anchor="middle" style="font-size:15px;font-weight:600" fill="#fde68a">Viveris Toulouse</text>
+  <text class="sous" x="56" y="154">Quiz en direct façon Kahoot, mené avec l’agence de Toulouse</text>
+      <circle class="puce" cx="64" cy="205" r="5"/>
+      <text class="point" x="84" y="211" style="animation-delay:0.4s">L’animateur lance les questions à l’écran</text>
+      <circle class="puce" cx="64" cy="245" r="5"/>
+      <text class="point" x="84" y="251" style="animation-delay:0.8s">Les joueurs répondent depuis leur téléphone</text>
+      <circle class="puce" cx="64" cy="285" r="5"/>
+      <text class="point" x="84" y="291" style="animation-delay:1.2s">Scores et classement en temps réel</text>
+      <circle class="puce" cx="64" cy="325" r="5"/>
+      <text class="point" x="84" y="331" style="animation-delay:1.6s">Tableau de bord de la partie en direct</text>
+
+  <rect x="680" y="44" width="456" height="58" rx="12" fill="#ffffff" fill-opacity="0.08"/>
+  <text x="700" y="80" style="font-size:19px;font-weight:600" fill="#ffffff">Quel protocole pour le temps réel ?</text>
+  <circle cx="1106" cy="73" r="18" fill="none" stroke="#ffffff" stroke-opacity="0.15" stroke-width="4"/>
+  <circle cx="1106" cy="73" r="18" fill="none" stroke="#fcd34d" stroke-width="4" stroke-linecap="round" stroke-dasharray="113.1" transform="rotate(-90 1106 73)">
+    <animate attributeName="stroke-dashoffset" dur="7s" repeatCount="indefinite" keyTimes="0;0.14;0.64;0.99;1" values="0;0;113.1;113.1;0"/></circle>
+  <g opacity="0">
+    <animate attributeName="opacity" dur="7s" repeatCount="indefinite" keyTimes="0;0.02;0.07;0.64;0.68;0.93;1" values="0;0;1;1;0.25;0.25;0"/>
+    <rect x="680" y="118" width="224" height="92" rx="10" fill="#e21b3c"/>
+    <polygon points="714,151 728,175 700,175" fill="#fff"/>
+    <text x="744" y="171" style="font-size:20px;font-weight:700" fill="#ffffff">HTTP</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" dur="7s" repeatCount="indefinite" keyTimes="0;0.06;0.11;0.64;0.68;0.93;1" values="0;0;1;1;1;1;0"/>
+    <rect x="912" y="118" width="224" height="92" rx="10" fill="#1368ce"/>
+    <polygon points="946,149 959,164 946,179 933,164" fill="#fff"/>
+    <text x="976" y="171" style="font-size:20px;font-weight:700" fill="#ffffff">WebSocket</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" dur="7s" repeatCount="indefinite" keyTimes="0;0.10;0.15;0.64;0.68;0.93;1" values="0;0;1;1;0.25;0.25;0"/>
+    <rect x="680" y="218" width="224" height="92" rx="10" fill="#d89e00"/>
+    <circle cx="714" cy="264" r="13" fill="#fff"/>
+    <text x="744" y="271" style="font-size:20px;font-weight:700" fill="#ffffff">FTP</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" dur="7s" repeatCount="indefinite" keyTimes="0;0.14;0.19;0.64;0.68;0.93;1" values="0;0;1;1;0.25;0.25;0"/>
+    <rect x="912" y="218" width="224" height="92" rx="10" fill="#26890c"/>
+    <rect x="934" y="252" width="24" height="24" fill="#fff"/>
+    <text x="976" y="271" style="font-size:20px;font-weight:700" fill="#ffffff">SMTP</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" dur="7s" repeatCount="indefinite" keyTimes="0;0.66;0.7;0.93;1" values="0;0;1;1;0"/>
+    <rect x="910" y="116" width="228" height="96" rx="12" fill="none" stroke="#ffffff" stroke-width="3" filter="url(#lueur)"/>
+    <circle cx="1110" cy="146" r="14" fill="#ffffff"/>
+    <path d="M1103 146l5 5 9-10" fill="none" stroke="#26890c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="1040" y="110" text-anchor="middle" style="font-size:24px;font-weight:800" fill="#fcd34d" opacity="0" filter="url(#lueur)">+1000
+    <animate attributeName="opacity" dur="7s" repeatCount="indefinite" keyTimes="0;0.68;0.72;0.88;0.93;1" values="0;0;1;1;0;0"/>
+    <animateTransform attributeName="transform" type="translate" dur="7s" repeatCount="indefinite" keyTimes="0;0.68;0.93;1" values="0 20;0 20;0 -12;0 -12"/>
+  </text>
+</svg>

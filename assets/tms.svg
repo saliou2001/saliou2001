@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380">
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#0f1a2e"/>
+    </linearGradient>
+    <linearGradient id="bord" x1="0" x2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="0.5" stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="route" x1="0" x2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <filter id="lueur"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grille" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#ffffff" fill-opacity="0.08"/>
+    </pattern>
+    <path id="trajet" d="M700 300 C 760 180, 860 330, 930 210 S 1060 90, 1130 150"/>
+  </defs>
+  <style>
+    .sans { font-family: 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif; }
+    .eyebrow { font-size: 14px; font-weight: 600; letter-spacing: 3px; fill: #67e8f9; }
+    .titre { font-size: 40px; font-weight: 700; fill: #ffffff; }
+    .sous { font-size: 17px; fill: #94a3b8; }
+    .point { font-size: 19px; fill: #e2e8f0; opacity: 0; animation: entre .8s ease-out forwards; }
+    .puce { fill: #22d3ee; }
+    .chiffre { font-size: 30px; font-weight: 700; fill: #ffffff; }
+    .legende { font-size: 12px; fill: #94a3b8; letter-spacing: 1px; }
+    .halo { animation: halo 2.4s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+    .trace { stroke-dasharray: 900; stroke-dashoffset: 900; animation: dessine 3s ease-out .3s forwards; }
+    @keyframes entre { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: none; } }
+    @keyframes halo { from { transform: scale(1); opacity: .8; } to { transform: scale(3.5); opacity: 0; } }
+    @keyframes dessine { to { stroke-dashoffset: 0; } }
+  </style>
+
+  <rect x="1" y="1" width="1198" height="378" rx="24" fill="url(#fond)" stroke="url(#bord)" stroke-width="2"/>
+  <rect x="640" y="24" width="536" height="332" rx="16" fill="url(#grille)"/>
+
+  <g class="sans">
+    <text class="eyebrow" x="56" y="70">PROJET PHARE · LEAD TECHNIQUE</text>
+    <text class="titre" x="56" y="122">TMS, gestion de flotte</text>
+    <text class="sous" x="56" y="154">SaaS multi-entreprise pour le transport routier et minier</text>
+
+    <g>
+      <circle class="puce" cx="64" cy="205" r="5"/>
+      <text class="point" x="84" y="211" style="animation-delay:.4s">Suivi des camions en temps réel par GPS</text>
+      <circle class="puce" cx="64" cy="245" r="5"/>
+      <text class="point" x="84" y="251" style="animation-delay:.8s">Contrôle du carburant et des anomalies</text>
+      <circle class="puce" cx="64" cy="285" r="5"/>
+      <text class="point" x="84" y="291" style="animation-delay:1.2s">Maintenance, paie et ressources humaines</text>
+      <circle class="puce" cx="64" cy="325" r="5"/>
+      <text class="point" x="84" y="331" style="animation-delay:1.6s">Une application web utilisable au téléphone</text>
+    </g>
+  </g>
+
+  <use href="#trajet" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="10" stroke-linecap="round"/>
+  <use class="trace" href="#trajet" fill="none" stroke="url(#route)" stroke-width="4" stroke-linecap="round" filter="url(#lueur)"/>
+
+  <g fill="#22d3ee">
+    <circle cx="700" cy="300" r="7"/><circle class="halo" cx="700" cy="300" r="7"/>
+    <circle cx="930" cy="210" r="7"/><circle class="halo" cx="930" cy="210" r="7" style="animation-delay:.8s"/>
+    <circle cx="1130" cy="150" r="7"/><circle class="halo" cx="1130" cy="150" r="7" style="animation-delay:1.6s"/>
+  </g>
+
+  <g filter="url(#lueur)">
+    <g>
+      <animateMotion dur="6s" repeatCount="indefinite" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#trajet"/></animateMotion>
+      <rect x="-16" y="-9" width="22" height="18" rx="3" fill="#f0abfc"/>
+      <rect x="7" y="-7" width="10" height="14" rx="3" fill="#c4b5fd"/>
+    </g>
+  </g>
+</svg>

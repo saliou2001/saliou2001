@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380">
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#121a30"/></linearGradient>
+    <linearGradient id="bord" x1="0" x2="1"><stop offset="0" stop-color="#db2777"/><stop offset="0.5" stop-color="#f9a8d4"/><stop offset="1" stop-color="#db2777"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0" dur="6s" repeatCount="indefinite"/></linearGradient>
+    <filter id="lueur"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grille" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#ffffff" fill-opacity="0.08"/></pattern>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif; }
+    .eyebrow { font-size: 14px; font-weight: 600; letter-spacing: 3px; fill: #f9a8d4; }
+    .titre { font-size: 40px; font-weight: 700; fill: #ffffff; }
+    .sous { font-size: 17px; fill: #94a3b8; }
+    .point { font-size: 19px; fill: #e2e8f0; opacity: 0; animation: entre .8s ease-out forwards; }
+    .puce { fill: #f9a8d4; }
+    @keyframes entre { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: none; } }
+  </style>
+  <rect x="1" y="1" width="1198" height="378" rx="24" fill="url(#fond)" stroke="url(#bord)" stroke-width="2"/>
+  <rect x="640" y="24" width="536" height="332" rx="16" fill="url(#grille)"/>
+  <text class="eyebrow" x="56" y="70">CO-FONDATEUR</text>
+  <text class="titre" x="56" y="122">Immo Guinée</text>
+  <text class="sous" x="56" y="154">Gestion locative et recherche de logement</text>
+      <circle class="puce" cx="64" cy="205" r="5"/>
+      <text class="point" x="84" y="211" style="animation-delay:0.4s">Agences, bailleurs, baux et quittances</text>
+      <circle class="puce" cx="64" cy="245" r="5"/>
+      <text class="point" x="84" y="251" style="animation-delay:0.8s">Recherche de logement et mise en relation</text>
+      <circle class="puce" cx="64" cy="285" r="5"/>
+      <text class="point" x="84" y="291" style="animation-delay:1.2s">Loyers payés par Orange Money et MTN MoMo</text>
+      <circle class="puce" cx="64" cy="325" r="5"/>
+      <text class="point" x="84" y="331" style="animation-delay:1.6s">Application en français et en anglais</text>
+
+  <rect x="680" y="48" width="456" height="44" rx="22" fill="#ffffff" fill-opacity="0.07" stroke="#f9a8d4" stroke-opacity="0.4"/>
+  <circle cx="706" cy="70" r="8" fill="none" stroke="#f9a8d4" stroke-width="2.5"/><path d="M712 76l6 6" stroke="#f9a8d4" stroke-width="2.5" stroke-linecap="round"/>
+  <clipPath id="frappe"><rect x="728" y="52" height="36" width="0"><animate attributeName="width" dur="9s" repeatCount="indefinite" keyTimes="0;0.15;0.94;1" values="0;300;300;0"/></rect></clipPath>
+  <text x="730" y="76" clip-path="url(#frappe)" style="font-size:17px" fill="#f1f5f9">Conakry, 2 chambres, Kaloum</text>
+  <line x1="660" y1="300" x2="1156" y2="300" stroke="#ffffff" stroke-opacity="0.15" stroke-width="2"/>
+  <polygon points="674,242 720,198 766,242" fill="#2a1f45" stroke="#f9a8d4" stroke-opacity="0.35"/><rect x="684" y="240" width="72" height="60" rx="3" fill="#1e1b3a" stroke="#f9a8d4" stroke-opacity="0.35"/><rect x="711" y="268" width="18" height="32" rx="2" fill="#0b1020"/><rect x="692" y="252" width="16" height="14" rx="2" fill="#334155"/><rect x="732" y="252" width="16" height="14" rx="2" fill="#334155"/><g filter="url(#lueur)" opacity="0"><rect x="692" y="252" width="16" height="14" rx="2" fill="#fde68a"/><rect x="732" y="252" width="16" height="14" rx="2" fill="#fde68a"/><animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.270;0.290;0.400;0.420;1" values="0;0;1;1;0;0"/></g>
+  <polygon points="794,242 840,198 886,242" fill="#2a1f45" stroke="#f9a8d4" stroke-opacity="0.35"/><rect x="804" y="240" width="72" height="60" rx="3" fill="#1e1b3a" stroke="#f9a8d4" stroke-opacity="0.35"/><rect x="831" y="268" width="18" height="32" rx="2" fill="#0b1020"/><rect x="812" y="252" width="16" height="14" rx="2" fill="#334155"/><rect x="852" y="252" width="16" height="14" rx="2" fill="#334155"/><g filter="url(#lueur)" opacity="0"><rect x="812" y="252" width="16" height="14" rx="2" fill="#fde68a"/><rect x="852" y="252" width="16" height="14" rx="2" fill="#fde68a"/><animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.380;0.400;0.510;0.530;1" values="0;0;1;1;0;0"/></g>
+  <rect x="922" y="170" width="76" height="130" rx="4" fill="#1e1b3a" stroke="#f9a8d4" stroke-opacity="0.35"/><rect x="936" y="184" width="16" height="14" rx="2" fill="#334155"/><rect x="966" y="184" width="16" height="14" rx="2" fill="#334155"/><rect x="936" y="212" width="16" height="14" rx="2" fill="#334155"/><rect x="966" y="212" width="16" height="14" rx="2" fill="#334155"/><rect x="936" y="240" width="16" height="14" rx="2" fill="#334155"/><rect x="966" y="240" width="16" height="14" rx="2" fill="#334155"/><rect x="936" y="268" width="16" height="14" rx="2" fill="#334155"/><rect x="966" y="268" width="16" height="14" rx="2" fill="#334155"/><g filter="url(#lueur)" opacity="0"><rect x="936" y="184" width="16" height="14" rx="2" fill="#fde68a"/><rect x="966" y="184" width="16" height="14" rx="2" fill="#fde68a"/><rect x="936" y="212" width="16" height="14" rx="2" fill="#fde68a"/><rect x="966" y="212" width="16" height="14" rx="2" fill="#fde68a"/><rect x="936" y="240" width="16" height="14" rx="2" fill="#fde68a"/><rect x="966" y="240" width="16" height="14" rx="2" fill="#fde68a"/><rect x="936" y="268" width="16" height="14" rx="2" fill="#fde68a"/><rect x="966" y="268" width="16" height="14" rx="2" fill="#fde68a"/><animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.490;0.510;0.555;0.575;1" values="0;0;1;1;0;0"/></g>
+  <polygon points="1034,242 1080,198 1126,242" fill="#2a1f45" stroke="#f9a8d4" stroke-opacity="0.35"/><rect x="1044" y="240" width="72" height="60" rx="3" fill="#1e1b3a" stroke="#f9a8d4" stroke-opacity="0.35"/><rect x="1071" y="268" width="18" height="32" rx="2" fill="#0b1020"/><rect x="1052" y="252" width="16" height="14" rx="2" fill="#334155"/><rect x="1092" y="252" width="16" height="14" rx="2" fill="#334155"/><g filter="url(#lueur)" opacity="0"><rect x="1052" y="252" width="16" height="14" rx="2" fill="#fde68a"/><rect x="1092" y="252" width="16" height="14" rx="2" fill="#fde68a"/><animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.600;0.620;0.940;0.960;1" values="0;0;1;1;0;0"/></g>
+  <rect x="1036" y="196" width="88" height="106" rx="6" fill="none" stroke="#f472b6" stroke-width="2.5" filter="url(#lueur)" opacity="0">
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.6;0.64;0.94;1" values="0;0;1;1;0"/></rect>
+  <g opacity="0">
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.58;0.62;0.94;1" values="0;0;1;1;0"/>
+    <animateTransform attributeName="transform" type="translate" dur="9s" repeatCount="indefinite" keyTimes="0;0.58;0.64;1" values="0 -50;0 -50;0 0;0 0"/>
+    <path d="M1080 186c-11 0-19-8-19-19s8-19 19-19 19 8 19 19c0 14-19 33-19 33z" fill="#f472b6" filter="url(#lueur)"/>
+    <circle cx="1080" cy="167" r="7" fill="#0b1020"/>
+  </g>
+  <g fill="none" stroke="#fdf2f8" stroke-width="3" opacity="0">
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.17;0.2;0.94;1" values="0;0;1;1;0"/>
+    <animateTransform attributeName="transform" type="translate" dur="9s" repeatCount="indefinite" keyTimes="0;0.29;0.33;0.4;0.44;0.51;0.555;0.94;1" values="720 140;720 140;840 140;840 140;960 140;960 140;1080 140;1080 140;720 140"/>
+    <circle r="22" fill="#ffffff" fill-opacity="0.08"/><path d="M16 16l14 14" stroke-linecap="round" stroke-width="5"/>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.7;0.74;0.94;1" values="0;0;1;1;0"/>
+    <rect x="860" y="316" width="276" height="32" rx="16" fill="#16a34a" fill-opacity="0.2" stroke="#4ade80" stroke-opacity="0.6"/>
+    <path d="M878 332l6 6 10-12" fill="none" stroke="#4ade80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="902" y="338" style="font-size:15px;font-weight:600" fill="#bbf7d0">Loyer payé par Orange Money</text>
+  </g>
+</svg>
