@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/saliou-bailo-bah-dev"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://sbb-cv.netlify.app"><img src="https://img.shields.io/badge/CV_en_ligne-7C3AED?style=for-the-badge&logo=netlify&logoColor=white" alt="CV en ligne"></a>
+  <a href="https://saliou.wayofglorious.com"><img src="https://img.shields.io/badge/CV_en_ligne-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" alt="CV en ligne"></a>
   <img src="https://img.shields.io/badge/Disponible-CDI-22D3EE?style=for-the-badge" alt="Disponible pour un CDI">
 </p>
 
